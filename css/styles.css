@@ -17,14 +17,10 @@
 .contenedor .contenedor-items{
     margin-top: 30px;
     display: flex;
-    justify-content: center ;
-    grid-gap: 30px;
-    grid-row-gap: 30px;
-    width: 100%;
-    transition: .3s;
 }
 .contenedor .contenedor-items{
-    max-width: 200px;
+    max-width: 600px;
+    height: 400px ;
     padding: 10px;
     margin: auto;
     border: 1px solid #666;
@@ -42,8 +38,12 @@
     box-shadow: 0 0 10px #666;
     scale: 1.05;
 }
-.contenedor-items .item .img-item{
-    width: 100%;
+.img-item{
+    width: 65%;
+    max-width: 400px;
+    padding: 10px;
+    margin: auto;
+    
 }
 .contenedor-items .item .titulo-item{
     display: block;
