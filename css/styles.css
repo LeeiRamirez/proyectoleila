@@ -42,8 +42,7 @@
     width: 65%;
     max-width: 400px;
     padding: 10px;
-    margin: auto;
-    
+    margin: auto;  
 }
 .contenedor-items .item .titulo-item{
     display: block;
@@ -76,7 +75,6 @@
     border-radius: 5px;
     cursor: pointer;
 }
-
 ul{
     list-style: none;
     display: flex;
