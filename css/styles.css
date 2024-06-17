@@ -1,112 +1,267 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 .compras{
-    background: url(../assets/16537884460970.webp);
-    background-size: contain;
-    background-position: center;
-    height: 300px;
+  background: url(../assets/16537884460970.webp);
+  background-size: contain;
+  background-position: center;
+  height: 300px;
 }
 .contenedor{
-    max-width: 1200px;
-    padding: 10px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    /*oculto lo que queda fuera del contenedor*/
-    contain: paint;
+  max-width: 1200px;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  contain: paint;
 }
 .contenedor .contenedor-items{
-    margin-top: 30px;
-    display: flex;
+  margin-top: 30px;
+  display: flex;
 }
 .contenedor .contenedor-items{
-    max-width: 600px;
-    height: 400px ;
-    padding: 10px;
-    margin: auto;
-    border: 1px solid #666;
-    border-radius: 10px;
-    padding: 20px;
-    transition: .3s;
-}
-.contenedor1{
-    max-width: 400px;
-    padding: 10px ;
-    margin: auto;
-    border-radius: 10px;
+  max-width: 600px;
+  height: 400px;
+  padding: 10px;
+  margin: auto;
+  border: 1px solid #666;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.3s;
 }
 .contenedor-items .item:hover{
-    box-shadow: 0 0 10px #666;
-    scale: 1.05;
+  box-shadow: 0 0 10px #666;
+  scale: 1.05;
 }
 .img-item{
-    width: 65%;
-    max-width: 400px;
-    padding: 10px;
-    margin: auto;  
+  width: 65%;
+  max-width: 400px;
+  padding: 10px;
+  margin: auto;
 }
 .contenedor-items .item .titulo-item{
-    display: block;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
 }
 .contenedor-items .item .precio-item{
-    display: block;
-    text-align: center;
-    font-weight: bold;
-    font-size: 22px;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
 }
 .texto-item{
-    display: block;
-    font-weight: bold;
-    text-align: row;
-    max-width: 600px;
-    padding: 10px;
-    border-radius: 30px;
-    padding: 30px;
+  display: block;
+  font-weight: bold;
+  text-align: row;
+  max-width: 600px;
+  padding: 10px;
+  border-radius: 30px;
+  padding: 30px;
 }
 .contenedor-items .item .boton-item{
-    display: block;
-    margin: 10px auto;
-    border: none;
-    background: black;
-    color: #fff;
-    padding: 5px 15px;
-    border-radius: 5px;
-    cursor: pointer;
+  display: block;
+  margin: 10px auto;
+  border: none;
+  background: black;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
 }
 li a{
-    color: black;
-    text-decoration: none;
-    margin: 5px;
+  color: black;
+  text-decoration: none;
+  margin: 5px;
 }
 .nueva{
-    display: flex;
-    flex-direction: row;
-    margin: 5px;
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
 }
 .piedepagina{
-    color: black;
-    margin: 5px;
+  color: black;
+  margin: 5px;
 }
 .cuadro{
-    width: 1200px;
-    height: 50px;
-    border: solid 5px rgb(244, 244, 238);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    border-radius: 5px;
-    background-color: rgb(244, 244, 238);
-    font-weight: bold;
+  width: 1200px;
+  height: 50px;
+  border: solid 5px rgb(244, 244, 238);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border-radius: 5px;
+  background-color: rgb(244, 244, 238);
+  font-weight: bold;
 }
 * {
-   padding: 0;
-   margin: 0;
-   font-family: 'Times New Roman', Times, serif;
+  padding: 0;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
 }
+.resolucion {
+  width: 99%;
+  text-align: center;
+}
+/**movil**/
+@media (max-width: 1250px) {
+  .padre{
+      display: block;
+  }
+  .hijo.hijo1.hijo2{
+      width: 100%;
+  }
+
+}
+/**desktop**/
+@media (min-width: 991px){
+  .movil{
+   display: none;
+  }
+}
+.padre{
+  display: inline-flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+  width: 100%;
+  overflow: hidden;
+ }
+
+.hijo{
+  order:0;
+  flex:0 1 auto;
+  align-self:auto;
+  height:auto;
+  width:auto;
+}
+      
+.hijo1{
+  order:0;
+  flex:0 1 auto;
+  align-self:auto;
+  height:auto;
+  width:auto;
+}
+      
+.hijo2{
+  order:0;
+  flex:0 1 auto;
+  align-self:auto;
+  height:auto;
+  width:auto;
+}
+.ani{
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top,rgb(206, 173, 173),rgb(242, 216, 210),rgb(252, 232, 228));
+}
+.contenedor1{
+  max-width: 1200px;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  contain: paint;
+}
+.contenedor1 .contenedor-items1{
+  margin-top: 30px;
+  display: flex;
+}
+.contenedor1 .contenedor-items1{
+  max-width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin: auto;
+  border: 1px solid #666;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.3s;
+}
+.contenedor-items1 .item1:hover{
+  box-shadow: 0 0 10px #666;
+  scale: 1.05;
+}
+.contenedor-items1 .item1{
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contenedor-items1 .item1{
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+}
+.slider {
+  width: 100%;
+  height: 1000px;
+  background-color: bisque;
+  margin: auto;
+  border: 5px solid white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.conten{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 100% 100% 100%;
+  animation-name: mover;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+.imagen1{
+  position: relative;
+  background-image: url(../assets/zr.jpg);
+  width: 100%;
+  height: 1000px;
+  background-size: cover;
+  background-position: center;
+}
+.imagen2{
+  position: relative;
+  background-image: url(../assets/zrrrr.jpg);
+  width: 100%;
+  height: 1000px;
+  background-size: cover;
+  background-position: center;
+}
+.imagen3{
+  position: relative;
+  background-image: url(../assets/zrrrrrrrrr3.jpg);
+  width: 100%;
+  height: 1000px;
+  background-size: cover;
+  background-position: center;
+}
+@keyframes mover {
+  24%{
+    margin-left: 0%;
+  }
+  25%{
+    margin-left: -100%;
+  }
+  54%{
+    margin-left: -100%;
+  }
+  58%{
+    margin-left: -200%;
+  }
+  84%{
+    margin-left: -200% ;
+  }
+  85%{
+    margin-left: -100%;
+  }
+  100%{
+    margin-left: 0%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
